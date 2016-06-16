@@ -38,7 +38,7 @@ void SKKOkuriEditor::ReadContext() {
 }
 
 void SKKOkuriEditor::WriteContext() {
-    context()->output.Compose("*" + okuri_);
+    context()->output.Compose(okuri_);
 
     update();
 }

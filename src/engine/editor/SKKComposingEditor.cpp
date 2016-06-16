@@ -43,7 +43,7 @@ void SKKComposingEditor::ReadContext() {
 
 void SKKComposingEditor::WriteContext() {
     context()->output.SetMark();
-    context()->output.Compose("" + composing_.String(), composing_.CursorPosition());
+    context()->output.Compose(composing_.String(), composing_.CursorPosition());
 
     update();
 }

@@ -171,7 +171,6 @@ void SKKEntry::updateEntry() {
     okuri_entry_ += prefix_;
 
     if(IsOkuriAri()) {
-        prompt_ += "*";
         prompt_ += kana_;
     }
 }

@@ -26,7 +26,7 @@
 #include <Cocoa/Cocoa.h>
 
 @interface CandidateCell : NSObject {
-    NSMutableDictionary* attributes_;
+    NSDictionary* attributes_;
     NSMutableAttributedString* entry_;
     NSSize size_;
 }

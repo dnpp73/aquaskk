@@ -49,7 +49,7 @@ void MacFrontEnd::ComposeString(const std::string& str, int cursorOffset) {
     if(utf8::length(str) == 2 && str.find("▽") == 0) {
         [client_ setMarkedText:@"▽" selectionRange:notFound() replacementRange:notFound()];
     }
-
+    
     [client_ setMarkedText:marked selectionRange:cursorPos replacementRange:notFound()];
 
     [marked release];
@@ -65,7 +65,7 @@ void MacFrontEnd::ComposeString(const std::string& str, int candidateStart, int 
 
     [marked addAttribute:NSUnderlineStyleAttributeName
                    value:[NSNumber numberWithInt:NSUnderlineStyleThick] range:segment];
-
+    
     [client_ setMarkedText:marked selectionRange:cursorPos replacementRange:notFound()];
 
     [marked release];
