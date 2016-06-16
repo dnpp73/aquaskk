@@ -41,7 +41,7 @@ void SKKCandidateEditor::WriteContext() {
     }
 
     context()->output.SetMark();
-    context()->output.Convert("▼" + str);
+    context()->output.Convert("" + str);
 
     update();
 }
