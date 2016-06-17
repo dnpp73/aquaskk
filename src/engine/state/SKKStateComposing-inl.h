@@ -109,7 +109,7 @@ State SKKState::Edit(const Event& event) {
                 return State::Transition(&SKKState::SelectCandidate);
             }
 
-            return State::Transition(&SKKState::RecursiveRegister);
+//            return State::Transition(&SKKState::RecursiveRegister);
         }
 
         return 0;
@@ -346,7 +346,7 @@ State SKKState::SelectCandidate(const Event& event) {
 
         if(param.IsNextCandidate()) {
             if(!selector_.Next()) {
-                return State::Transition(&SKKState::RecursiveRegister);
+//                return State::Transition(&SKKState::RecursiveRegister);
             }
             return 0;
         }
@@ -426,7 +426,7 @@ State SKKState::OkuriInput(const Event& event) {
                 return State::Transition(&SKKState::SelectCandidate);
             }
 
-            return State::Transition(&SKKState::RecursiveRegister);
+//            return State::Transition(&SKKState::RecursiveRegister);
         }
 
         return 0;
